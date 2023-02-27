@@ -3,55 +3,56 @@
     margin: 0;
     padding: 0;
     font-size: 25px;    
+    
 }
-
 body{
-  background-color: antiquewhite;
-  color: #6A66A3;
+    background-color: antiquewhite;
+    color: #6A66A3;
 }
-.nav-container {
+header {
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     top: 0;
     left: 0;
-    width: 150px;
-    height: 100%;
+    width: 100%;
     background-color: #6A66A3;
-    display: flex;
-    justify-content: space-around;
-    border-right: 3px solid #542E71;
-    
+    z-index: 999;
+  }
+  
+  .logo {
+    width: 98px;
+    padding: 10px;
+  }
+  
+  nav {
+    padding: 10px;
   }
   
   ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     margin: 0;
-    
+    padding: 0;
   }
   
   li {
-    margin: 10px 0; 
+    display: inline-block;
+    margin-left: 20px;
   }
   
   a {
     display: block;
     padding: 10px;
-    color:antiquewhite;
+    color: antiquewhite;
     text-decoration: none;
   }
   
   a:hover {
-    background-color: #542E71;
+    background-color: #542e71;
     border-radius: 25%;
     transition: 1s;
   }
-  
-  .content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   ::-webkit-scrollbar{
     background-color: #542E71;
   }
